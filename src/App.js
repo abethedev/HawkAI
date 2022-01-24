@@ -86,9 +86,6 @@ class App extends Component {
             zoom={14}
             scrollWheelZoom={true}
           >
-            {/* <button id="trigger">
-              <LocationMarker></LocationMarker>click
-            </button> */}
             <LocationMarker></LocationMarker>
 
             <LayersControl
