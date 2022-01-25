@@ -2,56 +2,49 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/login.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
       content="Web site created using create-react-app"
     />
-    <title>React App</title>
+    <title>Login Page</title>
   </head>
 
-  <body>
-    <h1>Login Page</h1>
-
+  <body class="bg1">
     <form
       name="myForm"
       class="modal-content animate"
       action="/action_page.php"
       method="post"
     >
-      <div class="imgcontainer">
-        <span
-          onclick="document.getElementById('id01').style.display='none'"
-          class="close"
-          title="Close Modal"
-          >&times;</span
-        >
-        <img src="" alt="Avatar" class="avatar" />
-      </div>
-
+      <h1>Login Page</h1>
       <div class="container">
-        <label for="uname"><b>Username</b></label>
+        <div class="imgcontainer">
+          <img src="./css/hawkai.jpg" alt="Avatar" class="avatar" />
+        </div>
+
+        <label for="uname"><b></b></label>
         <input
           type="text"
-          placeholder="Enter Username"
+          placeholder="Account Number"
           name="uname"
           id="username-field"
           required
         />
 
-        <label for="psw"><b>Password</b></label>
+        <label for="psw"><b></b></label>
         <input
           type="password"
-          placeholder="Enter Password"
+          placeholder="Password"
           name="psw"
           id="password-field"
           required
         />
 
         <button type="submit" class="logButton" onclick="login()">Login</button>
-        <label>
+        <label style="margin-left: 125px">
           <input type="checkbox" checked="checked" name="remember" /> Remember
           me
         </label>
@@ -68,6 +61,17 @@
         </div>
       </div>
     </form>
+
+    <div class="bannerRight animate">
+      <div class="container2">
+        <h2 class="rightText">HAWKAI</h2>
+        <h3 class="rightText">KOALA DETECTION PROGRAM</h3>
+        <h3 class="rightText">
+          The best animal tracking software in the market, come and see our
+          services.
+        </h3>
+      </div>
+    </div>
   </body>
   <script src="public\index.js"></script>
 </html>
