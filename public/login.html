@@ -12,64 +12,52 @@
     <title>Login Page</title>
   </head>
 
-  <body class="bg1">
-    <form
-      name="myForm"
-      class="modal-content animate"
-      action="/action_page.php"
-      method="post"
-    >
-      <h1>Login Page</h1>
-      <div class="container">
-        <div class="imgcontainer">
-          <img src="./css/hawkai.jpg" alt="Avatar" class="avatar" />
+  <body>
+    <div class="container animate">
+      <form action="">
+        <h1>Login Form</h1>
+
+        <div class="form-group">
+          <input
+            type="text"
+            placeholder="Email"
+            class="form-control"
+            required
+          />
         </div>
 
-        <label for="uname"><b></b></label>
-        <input
-          type="text"
-          placeholder="Account Number"
-          name="uname"
-          id="username-field"
-          required
-        />
-
-        <label for="psw"><b></b></label>
-        <input
-          type="password"
-          placeholder="Password"
-          name="psw"
-          id="password-field"
-          required
-        />
-
-        <button type="submit" class="logButton" onclick="login()">Login</button>
-        <label style="margin-left: 125px">
-          <input type="checkbox" checked="checked" name="remember" /> Remember
-          me
-        </label>
-
-        <div class="container" style="background-color: #f1f1f1">
-          <button
-            type="button"
-            onclick="window.location.href='./index.html';"
-            class="cancelbtn"
-          >
-            Cancel
-          </button>
-          <span class="psw"><a href="#">Forgot password?</a></span>
+        <div class="form-group">
+          <input
+            type="password"
+            placeholder="Password"
+            class="form-control"
+            required
+          />
         </div>
-      </div>
-    </form>
 
-    <div class="bannerRight animate">
-      <div class="container2">
-        <h2 class="rightText">HAWKAI</h2>
-        <h3 class="rightText">KOALA DETECTION PROGRAM</h3>
-        <h3 class="rightText">
-          The best animal tracking software in the market, come and see our
-          services.
-        </h3>
+        <input
+          type="submit"
+          style="background: rgb(87, 185, 199)"
+          class="btn"
+          value="login"
+        />
+        <input
+          type="button"
+          style="background: #a01d1d"
+          onclick="window.location.href='./index.html';"
+          class="btn"
+          value="cancel"
+        />
+      </form>
+
+      <div class="sideLog">
+        <div class="text">
+          <h1>HAWKAI</h1>
+          <h2>Koala Detection</h2>
+          <h3>
+            Log in and Experience the Best Animal Tracking Services There Are
+          </h3>
+        </div>
       </div>
     </div>
   </body>
